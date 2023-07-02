@@ -1,4 +1,4 @@
 # RasyadBima15.github.io
 This is my portfolio website
 
-You can access it by open the link : <a href="[rasyadbima15.github.io](https://rasyadbima15.github.io/)https://rasyadbima15.github.io/">rasyadbima15.github.io</a>
+You can access it by open the link : <a href="https://rasyadbima15.github.io/" target="_blank">https://rasyadbima15.github.io/</a>
