@@ -155,7 +155,7 @@ aside .card .social-media ul li a {
     font-size: 25px;
 }
 
-.education {
+#education {
     background-color: rgb(242,237,233);
     display: flex;
     flex-direction: row;
@@ -164,14 +164,14 @@ aside .card .social-media ul li a {
     padding-left: 60px;
 }
 
-.education .education-content {
+#education .education-content {
     display: flex;
     flex-direction: column;
     width: 50%;
     gap: 20px;
 }
 
-.education h1 {
+#education h1 {
     font-family: 'Work Sans', sans-serif;
     color: rgb(96, 55, 27);
     font-size: 50px;
@@ -180,13 +180,13 @@ aside .card .social-media ul li a {
     margin-top: 10px;
 }
 
-.education .education-content .year, .school {
+#education .education-content .year, .school {
     font-family: 'Work Sans', sans-serif;
     font-size: 24px;
     color: rgb(96, 55, 27);
 }
 
-.education .education-content .major {
+#education .education-content .major {
     font-family: 'Forum', sans-serif;
     color: rgb(96, 55, 27);
     font-size: 20px;
@@ -198,6 +198,7 @@ aside .card .social-media ul li a {
         flex-direction: column;
         height: 200px;
         padding: 20px;
+        width: 110%;
     }
 
     header.nav-container .name-profile p {
@@ -212,26 +213,45 @@ aside .card .social-media ul li a {
         gap: 2rem 3rem;
     }
 
-    main .content {
+    main {
+        width: 110%;
+    }
+
+    main #about {
         flex-direction: column;
         margin-left: 20px;
         gap: 0;
     }
 
-    main .content aside .card {
+    main #about aside .card {
         box-shadow: none;
     }
 
-    main .content aside .card .social-media {
+    main #about aside .card .social-media {
         box-shadow: -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
     }
 
-    main .content {
+    main #about {
         padding : 0px 20px 0px 20px;
     }
 
-    main .content .about-content {
+    main #about .about-content {
         padding: 0;
+    }
+    
+    #education {
+        display: flex;
+        flex-direction: column;
+        margin: 78px 40px 0px 40px;
+        padding: 20px;
+    }
+
+    #education .education-content {
+        width: 100%;
+    }
+
+    #education h1 {
+        font-size: 40px;
     }
 }
 
@@ -241,19 +261,23 @@ aside .card .social-media ul li a {
         width: 110%;
     }
 
-    main .content aside .card img {
+    main #about aside .card img {
         width: 130px;
     }
 
-    main .content aside .card .my-name h1 {
+    main #about aside .card .my-name h1 {
         font-size: 16px;
     }
 
-    main .content aside .card .line {
+    main #about aside .card .line {
         width: 70px;
     }
 
-    main .content aside .card .position span {
+    main #about aside .card .position span {
         font-size: 13px;
+    }
+
+    #education h1 {
+        font-size: 38px;
     }
 }
