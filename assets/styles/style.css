@@ -13,7 +13,7 @@ body {
 }
 
 header.nav-container {
-    width: 100%;
+    width: 100vw;
     height: 57px;
     margin-inline: auto;
     display: flex;
@@ -52,6 +52,10 @@ header.nav-container .nav-list li a {
 
 header.nav-container .nav-list li:hover a {
     color: rgb(176, 151, 133);
+}
+
+main {
+    width: 100vw;
 }
 
 main #about {
@@ -192,13 +196,104 @@ aside .card .social-media ul li a {
     font-size: 20px;
 }
 
+#certifications {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-bottom: 38px;
+    padding-left: 60px;
+    padding-right: 20px;
+}
+
+#certifications h1 {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 50px;
+    width: 670px;
+    margin: 0;
+}
+
+#certifications .certif-content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#certifications .certif-content section {
+    display: flex;
+    flex-direction: row;
+}
+
+#certifications .certif-content section .text {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+#certifications .certif-content section .text .certif-name {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+    /* margin-top: 10px;
+    padding-bottom: 15px; */
+}
+
+#certifications .certif-content section .text .certif-detail {
+    font-family: 'Forum', sans-serif;
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+#certifications .certif-content section .other-certif {
+    font-family: 'Work Sans', sans-serif;
+    font-size: 24px;
+    margin: 0;
+    margin-left: 10px;
+}
+
+#certifications .certif-content section .other-certif a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 25px;
+}
+
+#certifications .certif-content section .logo {
+    margin-right: 20px;
+}
+
+#certifications .certif-content section .logo img {
+    height: 48px;
+    width: 48px;
+}
+
+#certifications .certif-content section .show {
+    width: 100px;
+    text-decoration: none;
+    padding: 6px 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+
+    border: 3px solid black;
+    color: black;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: all .4s ease;
+
+    display: flex;
+    justify-content: center;
+}
+
+#certifications .certif-content section .show:hover {
+    background-color: rgb(242,237,233);
+}
 
 @media screen and (max-width: 1200px){
     header.nav-container {
         flex-direction: column;
         height: 200px;
         padding: 20px;
-        width: 110%;
+        width: 100vw;
     }
 
     header.nav-container .name-profile p {
@@ -214,7 +309,7 @@ aside .card .social-media ul li a {
     }
 
     main {
-        width: 110%;
+        width: 100vw;
     }
 
     main #about {
@@ -232,7 +327,7 @@ aside .card .social-media ul li a {
     }
 
     main #about {
-        padding : 0px 20px 0px 20px;
+        padding : 0px 10px 0px 10px;
     }
 
     main #about .about-content {
@@ -242,8 +337,8 @@ aside .card .social-media ul li a {
     #education {
         display: flex;
         flex-direction: column;
-        margin: 78px 40px 0px 40px;
-        padding: 20px;
+        margin: 78px 0px 0px 0px;
+        padding: 30px;
     }
 
     #education .education-content {
@@ -253,12 +348,26 @@ aside .card .social-media ul li a {
     #education h1 {
         font-size: 40px;
     }
+
+    #certifications {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    #certifications h1 {
+        padding-bottom: 18px;
+        width: min-content;
+        font-size: 40px;
+    }
 }
 
 @media screen and (max-width: 400px){
     header.nav-container {
         height: 250px;
-        width: 110%;
+        width: 100vw;
     }
 
     main #about aside .card img {
@@ -279,5 +388,9 @@ aside .card .social-media ul li a {
 
     #education h1 {
         font-size: 38px;
+    }
+
+    #certifications h1 {
+        font-size: 34px;
     }
 }
