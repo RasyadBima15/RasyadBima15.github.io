@@ -67,9 +67,9 @@ main #about {
 }
 
 main #about .about-content {
-    padding: 0px 0px 0px 60px;
+    padding: 0px 0px 0px 50px;
     text-align: justify;
-    margin-right: 50px;
+    padding-right: 50px;
 }
 
 main #about .about-content h1 {
@@ -85,7 +85,7 @@ main #about .about-content p {
 }
 
 main #about aside {
-    margin-right: 50px;
+    padding-right: 50px;
 }
 
 main #about aside .card {
@@ -354,10 +354,17 @@ aside .card .social-media ul li a {
         width: 100vw;
     }
 
-    main #about {
+    main div#about {
         flex-direction: column;
-        margin-left: 20px;
+        margin-left: 30px;
+        margin-right: 30px;
         gap: 0;
+        padding-right: 0;
+        padding-left: 0;
+    }
+
+    main #about aside {
+        margin-right: 0;
     }
 
     main #about aside .card {
@@ -366,10 +373,6 @@ aside .card .social-media ul li a {
 
     main #about aside .card .social-media {
         box-shadow: -0.5px 0.5px 0.5px rgba(0, 0, 0, 0.2);
-    }
-
-    main #about {
-        padding : 0px 10px 0px 10px;
     }
 
     main #about .about-content {
