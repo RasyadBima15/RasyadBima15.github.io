@@ -85,7 +85,7 @@ main #about .about-content p {
 }
 
 main #about aside {
-    padding-right: 50px;
+    margin-right: 50px;
 }
 
 main #about aside .card {
