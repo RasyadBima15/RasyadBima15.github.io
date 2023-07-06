@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&family=Maven+Pro&family=Work+Sans&display=swap');
 
-
 *, *::before, *::after {
     box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
 }
 
 body {
@@ -53,10 +56,6 @@ header.nav-container .nav-list li a {
 
 header.nav-container .nav-list li:hover a {
     color: rgb(176, 151, 133);
-}
-
-main {
-    width: 100vw;
 }
 
 main #about {
@@ -122,7 +121,7 @@ main #about aside .card .line {
 }
 
 main #about aside .card .position {
-    width: 300px;
+    width: auto;
 }
 
 main #about aside .card .position p {
@@ -202,7 +201,7 @@ aside .card .social-media ul li a {
     color: rgb(96, 55, 27);
     font-size: 20px;
     line-height: 1.5em;
-    text-align: justify;
+    text-align: left;
 }
 
 #certifications {
@@ -349,7 +348,6 @@ aside .card .social-media ul li a {
     display: flex;
     flex-direction: column;
     gap: 30px;
-    padding-top: 10px;
 }
 
 #contact h1 {
@@ -385,6 +383,10 @@ aside .card .social-media ul li a {
     font-size: 25px;
 }
 
+#contact .contact-content p.location {
+    margin-top: 5px;
+}
+
 #contact .contact-content p.location span {
     margin: 0;
     font-family: 'Forum', sans-serif;
@@ -402,13 +404,13 @@ footer .bottom {
 }
 
 footer .bottom p {
-    font-family: 'Forum', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     color: rgb(96, 55, 27);
     font-size: 18px;
     margin: 14px 0px;
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     header.nav-container {
         flex-direction: column;
         height: auto;
@@ -512,18 +514,19 @@ footer .bottom p {
     }
 }
 
-@media screen and (max-width: 400px){
+@media screen and (max-width: 600px){
     header.nav-container {
         width: 100vw;
-        gap: 20px;
     }
 
     header.nav-container .name-profile p {
-        margin: 0;
+        margin: 20px 0px;
+        margin-top: 0;
     }
 
     header.nav-container .nav-list ul {
-        margin: 0;
+        margin: 16px 0px;
+        margin-bottom: 0;
     }
 
     main #about aside .card img {
@@ -539,7 +542,7 @@ footer .bottom p {
     }
 
     main #about aside .card .position span {
-        font-size: 13px;
+        font-size: 15px;
     }
 
     .brown-light h1 {
@@ -569,6 +572,15 @@ footer .bottom p {
 
 @media screen and (max-width: 300px) {
     header.nav-container {
-        width: 100%;
+        width: 100vw;
+    }
+    .brown-light {
+        width: 100vw;
+    }
+    #contact {
+        width: 100vw;
+    }
+    footer {
+        width: 100vw;
     }
 }
